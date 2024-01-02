@@ -5,4 +5,4 @@ The program is designed to make it easy to change passwords for encrypted LUKS p
   
 ![](https://github.com/AKotov-dev/LUKSKey/blob/main/Screenshot1.png)  
   
-The interface is intuitive and does not require additional explanation. Stay safe, friends.
+Intermediate password files are destroyed after use (`shred`, 3 cycles of rewriting with zeros). The interface is intuitive and does not require additional explanation. Stay safe, friends.
