@@ -1,0 +1,48 @@
+msgid ""
+msgstr "Content-Type: text/plain; charset=UTF-8"
+
+#: tmainform.caption
+msgid "MainForm"
+msgstr ""
+
+#: tmainform.changebtn.caption
+msgctxt "tmainform.changebtn.caption"
+msgid "Change"
+msgstr ""
+
+#: tmainform.checkbox1.caption
+msgid "show input"
+msgstr ""
+
+#: tmainform.label1.caption
+msgid "LUKS partitions"
+msgstr ""
+
+#: tmainform.label2.caption
+msgid "Old Key:"
+msgstr ""
+
+#: tmainform.label3.caption
+msgid "New Key:"
+msgstr ""
+
+#: tmainform.statictext1.caption
+msgid "License: GPLv3   Author: alex_q_2000 (C) 2024   URL: https://forum.mageia.org.ru/"
+msgstr ""
+
+#: unit1.scompleted
+msgid "Completed."
+msgstr ""
+
+#: unit1.smountpoint
+msgid "Mount point (crypt_):"
+msgstr ""
+
+#: unit1.sstartkeychange
+msgid "Change the key of the selected partition?"
+msgstr ""
+
+#: unit1.swaitchangekey
+msgid "Changing key, please wait..."
+msgstr ""
+

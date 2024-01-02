@@ -1,0 +1,68 @@
+[NAME]
+name=lukskey
+
+[VERSION]
+version=0.1
+
+[RELEASE]
+release=0.mrx9
+
+[GROUP]
+group=Security
+
+[DESCRIPTION]
+0=Changing LUKS encrypted partition keys
+1=---
+2=More information: /usr/share/doc/package_name/repack.txt
+
+[MAINTAINER]
+maintainer=Alex Kotov
+
+[VENDOR]
+vendor=alex_q_2000 (C) 2024
+
+[SUMMARY]
+summary=Changing LUKS encrypted partition keys
+
+[URLCOPY]
+urlcopy=11
+
+[LICENSE]
+license=GPLv3
+
+[DEPS]
+deps=gtk2 cryptsetup coreutils
+
+[META]
+meta=0
+
+[NOARCH]
+noarch=0
+
+[DEB]
+deb=0
+
+[FILES]
+0=/usr/bin/lukskey
+1=/usr/share/icons/lukskey.png
+2=/usr/share/applications/lukskey.desktop
+3=/usr/share/polkit-1/actions/lukskey.policy
+4=/usr/share/lukskey/
+5=/usr/share/doc/lukskey/
+
+[URL32]
+url32=11
+
+[PROGRAMNAME]
+programname=LUKSKey
+
+[DEVTOOL]
+devtool=Lazarus
+
+[TOOLVERSION]
+toolversion=2.2.4
+
+[INFO]
+0=v0.1
+1=+ Initial release
+2=+ RPM packages for Mageia-9

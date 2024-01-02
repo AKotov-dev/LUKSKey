@@ -1,0 +1,6 @@
+{"version":1,"strings":[
+{"hash":228016703,"name":"unit1.sstartkeychange","sourcebytes":[67,104,97,110,103,101,32,116,104,101,32,107,101,121,32,111,102,32,116,104,101,32,115,101,108,101,99,116,101,100,32,112,97,114,116,105,116,105,111,110,63],"value":"Change the key of the selected partition?"},
+{"hash":183490782,"name":"unit1.swaitchangekey","sourcebytes":[67,104,97,110,103,105,110,103,32,107,101,121,44,32,112,108,101,97,115,101,32,119,97,105,116,46,46,46],"value":"Changing key, please wait..."},
+{"hash":120065326,"name":"unit1.scompleted","sourcebytes":[67,111,109,112,108,101,116,101,100,46],"value":"Completed."},
+{"hash":235383898,"name":"unit1.smountpoint","sourcebytes":[77,111,117,110,116,32,112,111,105,110,116,32,40,99,114,121,112,116,95,41,58],"value":"Mount point (crypt_):"}
+]}
