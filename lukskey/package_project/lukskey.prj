@@ -25,7 +25,7 @@ vendor=alex_q_2000 (C) 2024
 summary=Changing LUKS encrypted partition keys
 
 [URLCOPY]
-urlcopy=11
+urlcopy=https://github.com/AKotov-dev/LUKSKey
 
 [LICENSE]
 license=GPLv3
@@ -51,7 +51,7 @@ deb=0
 5=/usr/share/doc/lukskey/
 
 [URL32]
-url32=11
+url32=https://github.com/AKotov-dev/LUKSKey
 
 [PROGRAMNAME]
 programname=LUKSKey

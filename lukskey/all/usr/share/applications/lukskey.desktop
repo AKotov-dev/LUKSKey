@@ -1,0 +1,10 @@
+[Desktop Entry]
+Name=LUKSKey
+Name[ru]=LUKSKey
+Comment=Changing LUKS keys
+Comment[ru]=Изменение ключей LUKS
+Icon=lukskey
+Exec=lukskey
+Type=Application
+Categories=System;
+Terminal=false

@@ -1,0 +1,9 @@
+#!/bin/bash
+
+if [[ $(type -p kdesu) && $XDG_CURRENT_DESKTOP == KDE ]]; then
+    kdesu /usr/share/lukskey/lukskey
+	else
+    pkexec /usr/share/lukskey/lukskey
+fi
+
+exit;
