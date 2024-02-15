@@ -2,7 +2,7 @@
 name=lukskey
 
 [VERSION]
-version=0.1
+version=0.2
 
 [RELEASE]
 release=0.mrx9
@@ -31,7 +31,7 @@ urlcopy=https://github.com/AKotov-dev/LUKSKey
 license=GPLv3
 
 [DEPS]
-deps=gtk2 cryptsetup coreutils
+deps=gtk2 cryptsetup coreutils polkit
 
 [META]
 meta=0
@@ -63,6 +63,10 @@ devtool=Lazarus
 toolversion=2.2.4
 
 [INFO]
-0=v0.1
-1=+ Initial release
-2=+ RPM packages for Mageia-9
+0=v0.2
+1=+ Cosmetic edits
+2=+ RPM packages for Mageia-8/ROSA, Mageia-9
+3=
+4=v0.1
+5=+ Initial release
+6=+ RPM packages for Mageia-9
