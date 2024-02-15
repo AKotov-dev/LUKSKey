@@ -6,7 +6,8 @@ interface
 
 uses
   Classes, SysUtils, Forms, Controls, Graphics, Dialogs, StdCtrls, Buttons,
-  ComCtrls, Process, DefaultTranslator, AsyncProcess, Types, LCLType;
+  ComCtrls, Process, DefaultTranslator, AsyncProcess, Types, LCLType,
+  IniPropStorage;
 
 type
 
@@ -17,6 +18,7 @@ type
     CheckBox1: TCheckBox;
     Edit1: TEdit;
     Edit2: TEdit;
+    IniPropStorage1: TIniPropStorage;
     LUKSMountPoint: TAsyncProcess;
     ImageList1: TImageList;
     Label1: TLabel;
@@ -29,6 +31,7 @@ type
     StaticText1: TStaticText;
     procedure FindLUKSPartitionsReadData(Sender: TObject);
     procedure CheckBox1Change(Sender: TObject);
+    procedure FormCreate(Sender: TObject);
     procedure LUKSMountPointReadData(Sender: TObject);
     procedure FormKeyUp(Sender: TObject; var Key: word; Shift: TShiftState);
     procedure FormShow(Sender: TObject);
@@ -65,7 +68,7 @@ uses start_trd;
 
 procedure TMainForm.FormShow(Sender: TObject);
 begin
-  MainForm.Caption := Application.Title;
+  IniPropStorage1.Restore;
   //Показываем разделы LUKS
   FindLUKSPartitions.Execute;
 end;
@@ -167,6 +170,15 @@ begin
     Edit1.PasswordChar := '*';
     Edit2.PasswordChar := '*';
   end;
+end;
+
+procedure TMainForm.FormCreate(Sender: TObject);
+begin
+  MainForm.Caption := Application.Title;
+
+  if not DirectoryExists(GetUserDir + '.config') then
+    MkDir(GetUserDir + '.config');
+  IniPropStorage1.IniFileName := GetUserDir + '.config/lukskey.conf';
 end;
 
 //Показать UUID

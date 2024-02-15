@@ -17,7 +17,7 @@ uses
 
 begin
   RequireDerivedFormResource := True;
-  Application.Title:='LUKSKey v0.1';
+  Application.Title:='LUKSKey v0.2';
   Application.Scaled:=True;
   Application.Initialize;
   Application.CreateForm(TMainForm, MainForm);

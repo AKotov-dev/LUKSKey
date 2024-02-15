@@ -38,8 +38,8 @@ msgid "New Key:"
 msgstr "Новый ключ:"
 
 #: tmainform.statictext1.caption
-msgid "License: GPLv3   Author: alex_q_2000 (C) 2024   URL: https://forum.mageia.org.ru/"
-msgstr "Лицензия: GPLv3   Автор: alex_q_2000 (C) 2024   URL: https://forum.mageia.org.ru/"
+msgid "License: GPLv3   Author: alex_q_2000 (C) 2024   URL: https://forum.rosalinux.ru/"
+msgstr "Лицензия: GPLv3   Автор: alex_q_2000 (C) 2024   URL: https://forum.rosalinux.ru/"
 
 #: unit1.scompleted
 msgid "Completed."

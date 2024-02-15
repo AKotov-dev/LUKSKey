@@ -1,20 +1,22 @@
 object MainForm: TMainForm
-  Left = 304
-  Height = 376
-  Top = 124
-  Width = 721
+  Left = 290
+  Height = 468
+  Top = 125
+  Width = 856
   Caption = 'MainForm'
-  ClientHeight = 376
-  ClientWidth = 721
+  ClientHeight = 468
+  ClientWidth = 856
   KeyPreview = True
+  OnCreate = FormCreate
   OnKeyUp = FormKeyUp
   OnShow = FormShow
+  SessionProperties = 'Top;Left;Width;Height'
   LCLVersion = '2.2.4.0'
   object ListBox1: TListBox
     AnchorSideLeft.Control = Owner
     AnchorSideBottom.Control = StaticText1
     Left = 8
-    Height = 314
+    Height = 406
     Top = 40
     Width = 227
     Anchors = [akTop, akLeft, akBottom]
@@ -64,7 +66,7 @@ object MainForm: TMainForm
     Left = 307
     Height = 37
     Top = 40
-    Width = 406
+    Width = 541
     Anchors = [akTop, akLeft, akRight]
     BorderSpacing.Right = 8
     EchoMode = emPassword
@@ -92,7 +94,7 @@ object MainForm: TMainForm
     Left = 307
     Height = 37
     Top = 80
-    Width = 406
+    Width = 541
     Anchors = [akTop, akLeft, akRight]
     BorderSpacing.Left = 10
     BorderSpacing.Right = 8
@@ -107,7 +109,7 @@ object MainForm: TMainForm
     AnchorSideRight.Side = asrBottom
     AnchorSideBottom.Control = ListBox1
     AnchorSideBottom.Side = asrBottom
-    Left = 584
+    Left = 719
     Height = 43
     Top = 125
     Width = 129
@@ -196,8 +198,8 @@ object MainForm: TMainForm
   object StaticText1: TStaticText
     Left = 0
     Height = 20
-    Top = 356
-    Width = 721
+    Top = 448
+    Width = 856
     Align = alBottom
     Caption = 'License: GPLv3   Author: alex_q_2000 (C) 2024   URL: https://forum.mageia.org.ru/'
     Color = clDefault
@@ -218,9 +220,9 @@ object MainForm: TMainForm
     AnchorSideBottom.Control = ListBox1
     AnchorSideBottom.Side = asrBottom
     Left = 243
-    Height = 178
+    Height = 270
     Top = 176
-    Width = 470
+    Width = 605
     Anchors = [akTop, akLeft, akRight, akBottom]
     BorderSpacing.Left = 8
     BorderSpacing.Top = 8
@@ -241,7 +243,7 @@ object MainForm: TMainForm
     Left = 243
     Height = 10
     Top = 141
-    Width = 333
+    Width = 468
     Anchors = [akTop, akLeft, akRight]
     BorderSpacing.Right = 8
     TabOrder = 5
@@ -249,7 +251,7 @@ object MainForm: TMainForm
   object CheckBox1: TCheckBox
     AnchorSideRight.Control = Owner
     AnchorSideRight.Side = asrBottom
-    Left = 613
+    Left = 748
     Height = 32
     Top = 7
     Width = 100
@@ -351,5 +353,10 @@ object MainForm: TMainForm
     OnReadData = LUKSMountPointReadData
     Left = 600
     Top = 200
+  end
+  object IniPropStorage1: TIniPropStorage
+    StoredValues = <>
+    Left = 512
+    Top = 272
   end
 end
