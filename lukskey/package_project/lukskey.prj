@@ -65,7 +65,7 @@ toolversion=2.2.4
 [INFO]
 0=v0.2
 1=+ Cosmetic edits
-2=+ RPM packages for Mageia-8/ROSA, Mageia-9
+2=+ RPM packages for Mageia-8/ROSA (*.mrx8), Mageia-9
 3=
 4=v0.1
 5=+ Initial release
