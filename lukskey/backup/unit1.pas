@@ -19,6 +19,7 @@ type
     Edit1: TEdit;
     Edit2: TEdit;
     IniPropStorage1: TIniPropStorage;
+    Label4: TLabel;
     LUKSMountPoint: TAsyncProcess;
     ImageList1: TImageList;
     Label1: TLabel;
@@ -29,6 +30,7 @@ type
     ProgressBar1: TProgressBar;
     ChangeBtn: TSpeedButton;
     StaticText1: TStaticText;
+    procedure Edit1KeyPress(Sender: TObject; var Key: char);
     procedure FindLUKSPartitionsReadData(Sender: TObject);
     procedure CheckBox1Change(Sender: TObject);
     procedure FormCreate(Sender: TObject);
@@ -191,6 +193,20 @@ end;
 procedure TMainForm.FindLUKSPartitionsReadData(Sender: TObject);
 begin
   ListBox1.Items.LoadFromStream(FindLUKSPartitions.Output);
+end;
+
+//Input control: only English and special characters!
+procedure TMainForm.Edit1KeyPress(Sender: TObject; var Key: char);
+begin
+  if not (Key in ['a'..'z', 'A'..'Z', '0'..'9', '!', '@', '#', '$',
+    '%', '^', '&', '*', '(', ')', '_', '+', '-', '=', '{', '}', '[',
+    ']', '|', '\', ':', ';', '"', '''', '<', '>', ',', '.', '/', '~', '`', ' ', #8]) then
+  begin
+    Key := #0;
+    Label4.Visible := True;
+  end
+  else
+    Label4.Visible := False;
 end;
 
 end.

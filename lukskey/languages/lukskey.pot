@@ -19,11 +19,15 @@ msgid "LUKS partitions"
 msgstr ""
 
 #: tmainform.label2.caption
-msgid "Old Key:"
+msgid "Old password:"
 msgstr ""
 
 #: tmainform.label3.caption
-msgid "New Key:"
+msgid "New password:"
+msgstr ""
+
+#: tmainform.label4.caption
+msgid "Attention! The input language must be English!"
 msgstr ""
 
 #: tmainform.statictext1.caption

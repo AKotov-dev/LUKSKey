@@ -30,12 +30,16 @@ msgid "LUKS partitions"
 msgstr "Разделы LUKS"
 
 #: tmainform.label2.caption
-msgid "Old Key:"
-msgstr "Старый ключ:"
+msgid "Old password:"
+msgstr "Старый пароль:"
 
 #: tmainform.label3.caption
-msgid "New Key:"
-msgstr "Новый ключ:"
+msgid "New password:"
+msgstr "Новый пароль:"
+
+#: tmainform.label4.caption
+msgid "Attention! The input language must be English!"
+msgstr "Внимание! Язык ввода должен быть Английский!"
 
 #: tmainform.statictext1.caption
 msgid "License: GPLv3   Author: alex_q_2000 (C) 2024   URL: https://forum.rosalinux.ru/"

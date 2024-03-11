@@ -1,7 +1,7 @@
 object MainForm: TMainForm
   Left = 290
   Height = 468
-  Top = 125
+  Top = 128
   Width = 856
   Caption = 'MainForm'
   ClientHeight = 468
@@ -53,23 +53,24 @@ object MainForm: TMainForm
     Left = 243
     Height = 17
     Top = 50
-    Width = 61
+    Width = 98
     Anchors = [akTop, akLeft, akRight]
     BorderSpacing.Right = 3
-    Caption = 'Old Key:'
+    Caption = 'Old password:'
     ParentColor = False
   end
   object Edit1: TEdit
     AnchorSideLeft.Control = Edit2
     AnchorSideRight.Control = Owner
     AnchorSideRight.Side = asrBottom
-    Left = 307
+    Left = 344
     Height = 37
     Top = 40
-    Width = 541
+    Width = 504
     Anchors = [akTop, akLeft, akRight]
     BorderSpacing.Right = 8
     EchoMode = emPassword
+    OnKeyPress = Edit1KeyPress
     PasswordChar = '*'
     TabOrder = 1
   end
@@ -81,9 +82,9 @@ object MainForm: TMainForm
     Left = 243
     Height = 17
     Top = 90
-    Width = 54
+    Width = 91
     BorderSpacing.Right = 3
-    Caption = 'New Key:'
+    Caption = 'New password:'
     ParentColor = False
   end
   object Edit2: TEdit
@@ -91,14 +92,15 @@ object MainForm: TMainForm
     AnchorSideLeft.Side = asrBottom
     AnchorSideRight.Control = Owner
     AnchorSideRight.Side = asrBottom
-    Left = 307
+    Left = 344
     Height = 37
     Top = 80
-    Width = 541
+    Width = 504
     Anchors = [akTop, akLeft, akRight]
     BorderSpacing.Left = 10
     BorderSpacing.Right = 8
     EchoMode = emPassword
+    OnKeyPress = Edit1KeyPress
     PasswordChar = '*'
     TabOrder = 2
   end
@@ -260,6 +262,19 @@ object MainForm: TMainForm
     Caption = 'show input'
     OnChange = CheckBox1Change
     TabOrder = 6
+  end
+  object Label4: TLabel
+    AnchorSideLeft.Control = Owner
+    AnchorSideLeft.Side = asrCenter
+    AnchorSideTop.Control = CheckBox1
+    AnchorSideTop.Side = asrCenter
+    Left = 288
+    Height = 17
+    Top = 15
+    Width = 281
+    Caption = 'Attention! The input language must be English!'
+    ParentColor = False
+    Visible = False
   end
   object FindLUKSPartitions: TAsyncProcess
     Active = False
