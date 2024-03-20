@@ -53,20 +53,20 @@ object MainForm: TMainForm
     Left = 243
     Height = 17
     Top = 50
-    Width = 61
+    Width = 98
     Anchors = [akTop, akLeft, akRight]
     BorderSpacing.Right = 3
-    Caption = 'Old Key:'
+    Caption = 'Old password:'
     ParentColor = False
   end
   object Edit1: TEdit
     AnchorSideLeft.Control = Edit2
     AnchorSideRight.Control = Owner
     AnchorSideRight.Side = asrBottom
-    Left = 307
+    Left = 344
     Height = 37
     Top = 40
-    Width = 541
+    Width = 504
     Anchors = [akTop, akLeft, akRight]
     BorderSpacing.Right = 8
     EchoMode = emPassword
@@ -82,9 +82,9 @@ object MainForm: TMainForm
     Left = 243
     Height = 17
     Top = 90
-    Width = 54
+    Width = 91
     BorderSpacing.Right = 3
-    Caption = 'New Key:'
+    Caption = 'New password:'
     ParentColor = False
   end
   object Edit2: TEdit
@@ -92,10 +92,10 @@ object MainForm: TMainForm
     AnchorSideLeft.Side = asrBottom
     AnchorSideRight.Control = Owner
     AnchorSideRight.Side = asrBottom
-    Left = 307
+    Left = 344
     Height = 37
     Top = 80
-    Width = 541
+    Width = 504
     Anchors = [akTop, akLeft, akRight]
     BorderSpacing.Left = 10
     BorderSpacing.Right = 8
