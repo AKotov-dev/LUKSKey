@@ -52,7 +52,7 @@ resourcestring
   SStartKeyChange = 'Change the key of the selected partition?';
   SWaitChangeKey = 'Changing key, please wait...';
   SCompleted = 'Completed.';
-  SMountPoint = 'Mount point (crypt_):';
+//  SMountPoint = 'Mount point (crypt_):';
 
 
 var
@@ -63,9 +63,9 @@ implementation
 
 uses start_trd;
 
-{$R *.lfm}
+  {$R *.lfm}
 
-{ TMainForm }
+  { TMainForm }
 
 
 procedure TMainForm.FormShow(Sender: TObject);
@@ -93,7 +93,6 @@ end;
 //Значки в списке разделов LUKS
 procedure TMainForm.ListBox1DrawItem(Control: TWinControl; Index: integer;
   ARect: TRect; State: TOwnerDrawState);
-
 var
   BitMap: TBitMap;
 begin

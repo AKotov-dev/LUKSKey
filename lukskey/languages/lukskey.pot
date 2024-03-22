@@ -38,10 +38,6 @@ msgstr ""
 msgid "Completed."
 msgstr ""
 
-#: unit1.smountpoint
-msgid "Mount point (crypt_):"
-msgstr ""
-
 #: unit1.sstartkeychange
 msgid "Change the key of the selected partition?"
 msgstr ""

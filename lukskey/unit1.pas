@@ -52,7 +52,7 @@ resourcestring
   SStartKeyChange = 'Change the key of the selected partition?';
   SWaitChangeKey = 'Changing key, please wait...';
   SCompleted = 'Completed.';
-  SMountPoint = 'Mount point (crypt_):';
+  //  SMountPoint = 'Mount point (crypt_):';
 
 
 var

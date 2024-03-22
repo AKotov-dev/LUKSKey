@@ -11,7 +11,7 @@ object MainForm: TMainForm
   OnKeyUp = FormKeyUp
   OnShow = FormShow
   SessionProperties = 'Top;Left;Width;Height'
-  LCLVersion = '2.2.4.0'
+  LCLVersion = '3.2.0.0'
   object ListBox1: TListBox
     AnchorSideLeft.Control = Owner
     AnchorSideBottom.Control = StaticText1
@@ -26,12 +26,12 @@ object MainForm: TMainForm
     Font.Name = 'Sans'
     Font.Style = [fsBold]
     ItemHeight = 32
-    OnClick = ListBox1Click
-    OnDrawItem = ListBox1DrawItem
     ParentFont = False
     Style = lbOwnerDrawFixed
     TabOrder = 0
     TopIndex = -1
+    OnClick = ListBox1Click
+    OnDrawItem = ListBox1DrawItem
   end
   object Label1: TLabel
     AnchorSideLeft.Control = Owner
@@ -70,9 +70,9 @@ object MainForm: TMainForm
     Anchors = [akTop, akLeft, akRight]
     BorderSpacing.Right = 8
     EchoMode = emPassword
-    OnKeyPress = Edit1KeyPress
     PasswordChar = '*'
     TabOrder = 1
+    OnKeyPress = Edit1KeyPress
   end
   object Label3: TLabel
     AnchorSideLeft.Control = LogMemo
@@ -100,9 +100,9 @@ object MainForm: TMainForm
     BorderSpacing.Left = 10
     BorderSpacing.Right = 8
     EchoMode = emPassword
-    OnKeyPress = Edit1KeyPress
     PasswordChar = '*'
     TabOrder = 2
+    OnKeyPress = Edit1KeyPress
   end
   object ChangeBtn: TSpeedButton
     AnchorSideTop.Control = Edit2
@@ -260,8 +260,8 @@ object MainForm: TMainForm
     Anchors = [akTop, akRight]
     BorderSpacing.Right = 8
     Caption = 'show input'
-    OnChange = CheckBox1Change
     TabOrder = 6
+    OnChange = CheckBox1Change
   end
   object Label4: TLabel
     AnchorSideLeft.Control = Owner
